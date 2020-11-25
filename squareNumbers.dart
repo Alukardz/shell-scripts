@@ -8,7 +8,7 @@ void main() {
   int c = 0;
 
   do {
-    print("Escribe un numero entero: ");
+    // print("Escribe un numero entero: ");
     var num = stdin.readLineSync();
     int numero = int.tryParse(num);
     if (numero != null) {
@@ -20,4 +20,5 @@ void main() {
       stderr.write("Invalid input ${num}\n");
     }
   } while (c == 0);
+  stdout.write("\n");
 }
